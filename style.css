@@ -1,0 +1,127 @@
+body {
+  background-color: #031835ff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+h1 {
+  color: #031835ff;
+}
+
+.team-photo img {
+  width: 100%;
+  max-height: 600px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.team-introduction {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem 8rem;
+  color: white;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.team-member-info {
+  flex-grow: 1;
+}
+
+.team-member h2 {
+  margin: 0;
+  color: #031835ff;
+}
+
+.team-member h5 {
+  margin: 5px 0;
+  color: #444;
+}
+
+.team-member h5::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 1.5px; /* Ketebalan garis */
+  background-color: #031835ff; /* Warna garis */
+  margin-top: 0.5rem; /* Tambahkan margin atas garis */
+}
+
+.team-member p {
+  font-size: 0.6rem;
+}
+
+.member-profile .btn {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #031835ff;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.member-profile .btn:hover {
+  background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .team-member {
+    flex-direction: column; /* Mengubah tata letak ke kolom */
+    align-items: center; /* Pusatkan semua elemen di tengah */
+    text-align: center;
+  }
+
+  .team-introduction {
+    padding: 2rem 2rem;
+    text-align: justify;
+  }
+
+  .team-member img {
+    margin-bottom: 10px; /* Jarak antara foto dan teks */
+  }
+
+  .team-member h5::after {
+    display: none;
+  }
+
+  .member-profile .btn {
+    margin-top: 10px;
+    margin-right: 0;
+    font-size: 0.6rem;
+  }
+}
